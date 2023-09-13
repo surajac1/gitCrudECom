@@ -69,9 +69,9 @@ public class SupplierController {
 	}
 	
 	@DeleteMapping("/deletesupp/{supplier_id}")
-	public ResponseEntity<String> deletepro(@PathVariable("supplier_id")int pid){
+	public ResponseEntity<String> deletesupp(@PathVariable("supplier_id")int pid){
 		
-		String p = ss.deletepro(pid);
+		ss.deletesupp(pid);
 		
 		return new ResponseEntity<String>("supplier deleted successfully....", HttpStatus.OK);
 		

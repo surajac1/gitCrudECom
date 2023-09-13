@@ -14,6 +14,8 @@ public interface Supplierservice {
 
 	Supplier addsupp(Supplier po);
 
-	String deletepro(int pid);
+	
+
+	void deletesupp(int pid);
 
 }
