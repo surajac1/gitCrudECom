@@ -68,7 +68,7 @@ public class HomeController {
 	@DeleteMapping("/deletepro/{product_id}")
 	public ResponseEntity<String> deletepro(@PathVariable("product_id")int pid){
 		
-		String p = hs.deletepro(pid);
+		hs.deletepro(pid);
 		
 		return new ResponseEntity<String>("product deleted successfully....", HttpStatus.OK);
 		

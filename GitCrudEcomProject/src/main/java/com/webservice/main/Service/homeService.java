@@ -12,6 +12,6 @@ public interface homeService {
 
 	Product getsinglepro(int id);
 
-	String deletepro(int pid);
+	void deletepro(int pid);
 
 }
